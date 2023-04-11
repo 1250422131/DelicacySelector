@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://jitpack.io' }
+
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+
+        mavenCentral()
+
+        gradlePluginPortal()
+        google()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://jitpack.io' }
+
+
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+
+
+        mavenCentral()
+        google()
+    }
+}
+rootProject.name = "DelicacySelector"
+include ':app'
